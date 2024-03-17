@@ -1,0 +1,15 @@
+label,input{
+    margin-bottom: 10px; margin-top :10px;
+}
+.g{
+    margin: 6px;
+}
+#phonenumber{
+    outline: 0;
+}
+#phonenumber:valid{
+    border-color: green;
+}
+#phonenumber:invalid{
+    border-color: red;
+}

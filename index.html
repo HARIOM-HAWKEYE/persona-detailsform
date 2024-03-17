@@ -8,57 +8,40 @@
 </head>
 <body>
   <form action="#">
- <fieldset>
-    <legend>Personal Details</legend>
+ 
+    Personal Details <br>
+    <label for="Salutation">Salutation  </label>
+
+    <select name="Salutation" id="Salutation">
+        <option value="none">--None--</option>
+        <option value="Mr ">Mr.</option>
+        <option value="Mrs">Mrs.s</option>
+        </select>
+        <br>
     <label for="FirstName">Firstname:</label>
-    <input type="text" name="firstname"  id="FirstName">
+    <input type="text" name="firstname"  id="FirstName" placeholder="abcd">
     <br>
-    <label for="Middlename">Middlename:</label>
-    <input type="text" id="Middlename">
-    <br>
-    <label for="Lastname">Lastname:</label>
-    <input type="text" id="Lastname">
-    <br>
-    <label for="Course">Course : </label>
- <select name="Course" id="Course">
-<option value="Course">Course</option>
-<option value="BCA">BCA</option>
-<option value="BBA">BBA</option>
-<option value="B.Tech">B.Tec</option>
-<option value="MCA" >MCA</option>
-<option value="MBA">MBA</option>
-<option value="M.Tech">M.Tech</option>
-
-
- </select>
- <br>
- Gender : <br>
- <input type="radio" name="gender" value="male" class="g">Male <br>
- <input type="radio" name="gender" value="female" class="g">Female <br>
- <input type="radio" name="gender" value="Others" class="g">Others <br>
- <label for="datetime">DOB</label>
- <input type="datetime-local" name="datetime" id="datetime"><br>
- <label for="phonenumber">Phone : </label>
- <input type="tel" name="p-number" id="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  maxlength="12" size="12" placeholder="xxx-xxx-xxxx" required><br>
-<label for="address">Address : </label><br>
- <textarea name="address" id="address" cols="80" rows="5" placeholder="Enter your address here:"></textarea> <br>
- <label for="email">Email :</label>
- <input type="email" name="E-mail" id="email"><br>
- <label for="password">Password :</label>
- <input type="password" name="pass" id="password" > <br>
- <label for="re-password">Re-type password :</label>
- <input type="password" name="repass" id="re-password" ><br>
- <input type="checkbox" name="Agree" value="Yes" id="agree" > <label for="agree">Agree to terms and conditions
     
-</label> <br>
-<label for="choosefile">Choose File</label>
-<input type="file" name="file" id="choosefile"> <br>
-<label for="chooseColor">Choose Color</label>
-<input type="color" name="file" id="chooseColor">
+    <label for="Lastname">Lastname:</label>
+    <input type="text" id="Lastname" placeholder="abcd">
+    <br>
+    
+ <br>
+ Gender : 
+ <input type="radio" name="gender" value="male" class="g">Male 
+ <input type="radio" name="gender" value="female" class="g">Female 
 <br>
-<button type="reset">Reset</button>
+<label for="email">Email :</label>
+<input type="email" name="E-mail" id="email"><br>
+ <label for="datetime">Date of Birth : </label>
+ <input type="date" name="datetime" id="datetime"><br>
+
+<label for="address">Address : </label><br>
+ <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your address here:"></textarea> <br>
+
+
 <button type="submit">Submit</button>
-</fieldset>
+
 
 
   </form>
